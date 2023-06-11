@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Roboto:wght@900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #020228;
+}
+header{
+    width: 97.5%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 15px;
+    
+    background: linear-gradient( 
+        transparent rgba(31, 31, 31, 0.692)
+        );
+}
+
+.logotipo{
+    align-self: center;
+}
+.login{
+    display: flex;
+}
+
+.login a{
+    font-family: "Raleway";
+    font-size: 8px;
+    align-self: center;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+.login button{
+    align-self: center;
+    font-family: "Raleway";
+    background: linear-gradient(
+        -40deg,
+        #310431,
+        #410841,
+        #8d0d8d
+        );
+    width: 100px;
+    height: 30px;
+    font-size: 8.5px;
+    color: white;
+    border: none;
+    font-weight: 800;
+    border-radius: 40px ;
+    transition: 4s;
+}
+
+.login button:hover{
+    background: white;
+    color: #020228;
+    
+    border: none
+}
+
+.section1{
+    
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+
+    background: linear-gradient(
+        10deg,
+        #020228 65%,
+        #4e1369,
+        #270c53
+      );
+    animation: gradient 5s ease-out infinite alternate;
+    background-size: 300% 300%;
+    font-family: "Raleway";
+    color: white;
+}
+
+.info-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    row-gap: 30px;
+}
+
+.logo-empresas{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    
+}
+
+.apresentacao h2{
+    font-size:xx-large;
+    font-weight: 400;
+}
+.apresentacao h3{
+    font-size: 50px;
+}
+
+.barra{
+    width: 60%;
+    height: 5px;
+    background: linear-gradient(
+        -40deg,
+        #310431,
+        #410841,
+        #8d0d8d
+        );
+}
+
+.info-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Quicksand";
+}
+
+.assinatura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.assinatura h4{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.assinatura h5{
+    font-family: "Raleway";
+    font-size: 40px;
+}
+
+h5 span{
+    font-size: large;
+    font-weight: 300;
+}
+
+.assinatura button{
+    width: 250px;
+    height: 50px;
+
+    margin: 40px;
+
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(
+        -40deg,
+        #310431,
+        #410841,
+        #8d0d8d
+        );
+    
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: white;
+    animation: wiggle 2.2s linear infinite;
+}
+
+.assinatura button:hover {
+    background: transparent;
+    background-position: 100%;
+    outline: 2px solid #410841;
+    cursor: pointer;
+  }
+
+.assinatura p{
+    height: 25px;
+    width: 250px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    background:  url(assets/images/background-movies-series.png);
+    margin-top: 200px;
+    color: white;
+}
+
+.section2 h2{
+    width: 90%;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    column-gap: 30px;
+}
+
+.box{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    font-family: "Raleway";
+
+    background: linear-gradient(10deg,#02022865, #3b1e6367);
+    border-radius: 10px;
+    transition: transform 2s;
+}
+
+.plano{
+    width: 80%;
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: row;  
+    align-self: center; 
+    justify-content: space-between;
+}
+
+.plano h3{
+    font-size: 22px;
+}
+.plano h4{
+    font-size: xx-large;
+    color: #e710c3;
+}
+.plano span{
+    font-size: medium;
+    color: white;
+}
+
+.info-cards{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 18px;
+    row-gap: 20px;   
+}
+.box button{
+    width: 300px;
+    height: 40px;
+
+    align-self: center;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(
+        -40deg,
+        #310431,
+        #410841,
+        #8d0d8d
+        );
+
+    letter-spacing: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: backgroud 5s;
+}
+.box button:hover {
+    background: transparent;
+    background-position: 100%;
+    outline: 2px solid #410841;
+    cursor: pointer;
+  }
+
+.section3{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Raleway";
+    color: white;
+}
+
+.section3 h2{
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.canais{
+    display: block;
+    width: 85.5%;
+    column-gap: 50px;
+    columns: 3;
+    
+}
+.canais img{
+    width: 100%;
+    margin-top: 40px;
+
+    border: 2px solid #5516ba;
+    border-radius: 15px;
+
+}
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Raleway";
+    color: white;
+}
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    column-gap: 50px;
+}
+
+.footer-info a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #a491b4;
+}
+
+.footer-info a:hover{
+    color: white;
+    transition: 1s;
+}
+.direitos-autorais{
+    color: #6c36ca;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.direitos-autorais small{
+    
+    font-size: 90%;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-bottom: 20px;
+}
+
+@keyframes wiggle{
+    0%{
+        transform: rotate(0);
+    }
+    15%{
+        transform: rotate(-15deg);
+    }
+    20%{
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    40%, 100%{
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
+
+@media screen and (max-width: 986px){
+    .card{
+        display:flex;
+        flex-direction: column;
+        width: 80%;
+        
+    }
+    .box{
+        margin-top: 50px;
+    }
+    .canais{
+        columns: 2;
+    }
+}
+@media screen and (max-width: 740px){
+    .footer-info{
+        column-gap: 25px;
+    }
+    .footer-info a{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .logo-empresas{
+        display: block;
+        
+    }
+    .plano{
+        flex-direction: column;
+    }
+    .info-cards{
+        font-size: 15px;
+    }
+    .canais{
+        width: 50%;
+        columns: 1;
+    }
+    .footer-info a{
+        font-size: 9px;
+    }
+    
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #8824b9;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #97188b;
+  }
